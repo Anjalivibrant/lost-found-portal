@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Lost & Found Portal</h1>
+      <nav>
+        <a href="add.html" class="btn">+ Post Item</a>
+      </nav>
+    </header>
+
+    <section class="filter-section">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+    </section>
+
+    <div id="items" class="items-grid"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

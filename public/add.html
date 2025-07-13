@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Lost/Found Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Report Lost or Found Item</h1>
+      <nav>
+        <a href="index.html" class="btn">← Back to Home</a>
+      </nav>
+    </header>
+
+    <form id="itemForm" class="form-card">
+      <input type="text" id="title" placeholder="Item Title" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="text" id="contact" placeholder="Contact Number / Email" required>
+      <select id="type" required>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+      <input type="file" id="photo" accept="image/*" required>
+      <button type="submit" class="btn primary">Submit</button>
+    </form>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
